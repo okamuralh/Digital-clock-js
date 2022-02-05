@@ -1,6 +1,5 @@
-let date = new Date();
-
 function showDate() {
+  let date = new Date();
   let d = date.getDate();
   let months = [
     "Jan",
@@ -26,6 +25,7 @@ function showDate() {
 }
 
 function showTime() {
+  let date = new Date();
   let h = date.getHours();
   let m = date.getMinutes();
   let s = date.getSeconds();
@@ -59,5 +59,5 @@ function showTime() {
   setTimeout(showTime, 1000);
 }
 
-showDate();
 showTime();
+showDate();
