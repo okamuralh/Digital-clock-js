@@ -1,5 +1,31 @@
+let date = new Date();
+
+function showDate() {
+  let d = date.getDate();
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let m = months[date.getMonth()];
+  let y = date.getFullYear();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let weekDay = days[date.getDay()];
+  let currentDate = document.querySelector("#date");
+
+  currentDate.innerHTML = `${m} ${d}, ${y} ${weekDay}`;
+}
+
 function showTime() {
-  let date = new Date();
   let h = date.getHours();
   let m = date.getMinutes();
   let s = date.getSeconds();
@@ -33,4 +59,5 @@ function showTime() {
   setTimeout(showTime, 1000);
 }
 
+showDate();
 showTime();
