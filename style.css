@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .clock {
@@ -21,5 +22,13 @@ body {
   align-self: center;
   color: #4fb4a6;
   font-size: 80px;
+  font-family: "Abel", sans-serif;
+}
+
+.date {
+  display: flex;
+  align-self: center;
+  color: #4fb4a6;
+  font-size: 50px;
   font-family: "Abel", sans-serif;
 }
